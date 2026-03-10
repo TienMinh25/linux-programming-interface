@@ -5,7 +5,7 @@
 #include <string.h>
 #include<sys/stat.h>
 #include<fcntl.h>
-#include "../lib/tlpi_hdr.h"
+#include "tlpi_hdr.h"
 
 // this check macro BUF_SIZE is define or not
 #ifndef BUF_SIZE
@@ -35,7 +35,7 @@ int main(int argc, char *argv[]){
 
     /* Transfer data until we encounter end of input or an error */
 
-    while ((numRead = read(inputFd, buf, BUF_SIZE) > 0))
+    while ((numRead = read(inputFd, buf, BUF_SIZE)) > 0)
         if (write(outputFd, buf, numRead) != numRead)
             fatal("write() returned error or partial write occurred");
 

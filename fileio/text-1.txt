@@ -1,0 +1,1 @@
+This is file source, be used to copy to file result-copy.txt
