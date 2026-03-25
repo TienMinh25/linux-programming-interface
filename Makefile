@@ -6,3 +6,6 @@ compile_seek:
 	
 compile_tee:
 	gcc -I lib/ -o exercise/chapter-4/tee exercise/chapter-4/tee.c lib/error_functions.c
+	
+compile_hcp:
+	gcc -I lib/ -o exercise/chapter-4/hcp exercise/chapter-4/hcp.c lib/error_functions.c
