@@ -1,0 +1,4 @@
+This is tee test command
+This is tee test command 2
+This message should be append into the file
+Everything works oke

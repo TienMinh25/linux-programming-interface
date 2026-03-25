@@ -3,3 +3,6 @@ compile_copy:
 	
 compile_seek:
 	gcc -I lib/ -o fileio/seek fileio/seek.c lib/error_functions.c lib/get_num.c
+	
+compile_tee:
+	gcc -I lib/ -o exercise/chapter-4/tee exercise/chapter-4/tee.c lib/error_functions.c
